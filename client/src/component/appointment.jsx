@@ -3,7 +3,7 @@ import appointment from "../assets/appointment.jpg";
 const Appointment = () => {
     return (
         <>
-            <div className="relative my-10">
+            <div className="relative mt-10">
                 <div className="relative">
                 <img
                     src={appointment}
