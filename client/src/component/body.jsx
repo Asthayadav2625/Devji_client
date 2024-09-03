@@ -25,7 +25,7 @@ const Body = () => {
     freecamp8,
     freecamp9,
     freecamp10,
-     
+
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -49,7 +49,7 @@ const Body = () => {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-       
+
       <div className="absolute inset-0 bg-[#A1D6E2] opacity-90"></div>
 
       {/* Main Content */}
@@ -60,29 +60,37 @@ const Body = () => {
             <img
               src={images[currentImageIndex]}
               alt="Camp Activities"
-              className="w-[550px] h-[600px] shadow-lg"
+              className="w-[550px] h-[600px] shadow-lg object-cover rounded-xl"
             />
           </div>
 
           {/* Right Content */}
-          <div className="w-full  md:pl-4 mr-56 ">
-            <div className='bg-white w-[500px] h-34 mb-10 shadow-lg rounded-lg  z-20'>
-              <div className='items-center pl-16 m-5'>
+           
+          <div className="w-full  md:pl-4 mr-56 p-5 mt-20">
+            
+            <div 
+            style={{ margin: '-148px 0 0 -100px' }}
+            className='absolute bg-white w-[500px] h-34 mb-10 shadow-lg z-20'>
+              {/* <div className='items-center pl-16 m-5'>
 
                <h2 className="text-5xl text-black font-semibold ">FREE CAMP FOR EYE CHECKUPS</h2>
-              </div>
+              </div> */}
+                <h2 className="p-5 text-5xl text-black font-semibold">
+                  FREE CAMP FOR EYE CHECKUPS
+                </h2>
+               
 
             </div>
             <p className="text-lg text-white mb-6">
-              There are many people in our country, who never think and care for their eyes, 
-              we are organizing free camps of eye checkups at various remote areas, and providing 
-              best-in-class treatments, free of cost donation of eye glasses, medicines and healthy 
-              foods to all attendees. These events improve awareness and eye care for those who cannot 
+              There are many people in our country, who never think and care for their eyes,
+              we are organizing free camps of eye checkups at various remote areas, and providing
+              best-in-class treatments, free of cost donation of eye glasses, medicines and healthy
+              foods to all attendees. These events improve awareness and eye care for those who cannot
               think to visit the best eye hospital in Jabalpur.
             </p>
             <Link
               to="/gallery"
-              className="inline-block mt-6 bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300"
+              className="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300"
             >
               VISIT OUR GALLERY
             </Link>

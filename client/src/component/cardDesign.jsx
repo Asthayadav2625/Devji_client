@@ -27,11 +27,12 @@
 
 import { FaUser, FaStar } from 'react-icons/fa';
 import { AiFillCheckCircle } from 'react-icons/ai';
+import google from '../assets/googleicon.png';
 
 const CardDesign = ({ data }) => {
     const { userName, description, date } = data;
     return (
-        <div className='bg-white shadow-lg rounded-lg p-4 w-64 h-44 flex flex-col justify-between'>
+        <div className='bg-white shadow-lg border rounded-lg p-4 w-64 h-44 flex flex-col justify-between'>
             <div className="flex items-center space-x-4">
                 <img
                     src="https://via.placeholder.com/50" // Replace with the actual image source
@@ -56,7 +57,7 @@ const CardDesign = ({ data }) => {
             </div>
             <div className='flex justify-end'>
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_2015_logo.svg"
+                    src={google}
                     alt="Google Logo"
                     className="w-5 h-5"
                 />
